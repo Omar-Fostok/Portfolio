@@ -3,66 +3,83 @@
     <Navigation id="nav" />
     <v-main id="body">
       <v-container class="grey lighten-5" id="con">
-        <h2 class="hidden-lg-and-up" style="margin-top: 10%">SERVICES</h2>
+        <v-lazy transition="scale-transition">
+          <h2 class="hidden-lg-and-up" style="margin-top: 10%">SERVICES</h2>
+        </v-lazy>
         <v-row id="rowy">
           <v-col cols="12" sm="6" md="6" lg="4" id="r">
-            <v-card class="mx-auto my-12" max-width="374" id="card1">
-              <v-img
-                height="250"
-                src="../assets/images/diego-ph-fIq0tET6llw-unsplash.jpg"
-                id="timg1"
-              ></v-img>
+            <v-lazy transition="scroll-y-reverse-transition">
+              <v-card class="mx-auto my-12" max-width="374" id="card1">
+                <div class="test">
+                  <v-img
+                    height="250"
+                    src="../assets/images/rsz_diego-ph-fiq0tet6llw-unsplash.jpg"
+                    id="img1"
+                  ></v-img>
+                </div>
 
-              <h3>Web Design</h3>
+                <h3>Web Design</h3>
 
-              <div class="pad">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum alias accusamus distinctio eos! Unde rerum quibusdam
-                illum adipisci quasi repudiandae delectus, repellendus incidunt
-                dolores dolorum assumenda doloremque, magnam itaque magni. Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-                dolore natus doloribus?
-              </div>
-            </v-card>
+                <div class="pad">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum alias accusamus distinctio eos! Unde rerum quibusdam
+                  illum adipisci quasi repudiandae delectus, repellendus
+                  incidunt dolores dolorum assumenda doloremque, magnam itaque
+                  magni. Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Cupiditate dolore natus doloribus?
+                </div>
+              </v-card>
+            </v-lazy>
           </v-col>
           <v-col cols="12" sm="6" md="6" lg="4" id="s">
-            <h2 class="hidden-md-and-down">SERVICES</h2>
-            <v-card class="mx-auto my-12" max-width="374" id="card2">
-              <v-img
-                height="250"
-                src="../assets/images/karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg"
-              ></v-img>
+            <v-lazy transition="scale-transition">
+              <h2 class="hidden-md-and-down">SERVICES</h2>
+            </v-lazy>
+            <v-lazy transition="slide-x-transition">
+              <v-card class="mx-auto my-12" max-width="374" id="card2">
+                <div class="test">
+                  <v-img
+                    id="img2"
+                    height="250"
+                    src="../assets/images/rsz_karl-pawlowicz-quhuwyngsa0-unsplash.jpg"
+                  ></v-img>
+                </div>
+                <h3>Web Development</h3>
 
-              <h3>Web Development</h3>
-
-              <div class="pad">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum alias accusamus distinctio eos! Unde rerum quibusdam
-                illum adipisci quasi repudiandae delectus, repellendus incidunt
-                dolores dolorum assumenda doloremque, magnam itaque magni. Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-                dolore natus doloribus?
-              </div>
-            </v-card>
+                <div class="pad">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum alias accusamus distinctio eos! Unde rerum quibusdam
+                  illum adipisci quasi repudiandae delectus, repellendus
+                  incidunt dolores dolorum assumenda doloremque, magnam itaque
+                  magni. Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Cupiditate dolore natus doloribus?
+                </div>
+              </v-card>
+            </v-lazy>
           </v-col>
           <v-col cols="12" sm="6" md="6" lg="4" id="t">
-            <v-card class="mx-auto my-12" max-width="374" id="card3">
-              <v-img
-                height="250"
-                src="../assets/images/istockphoto-1299482876-612x612.jpg"
-              ></v-img>
+            <v-lazy transition="scroll-y-transition">
+              <v-card class="mx-auto my-12" max-width="374" id="card3">
+                <div class="test">
+                  <v-img
+                    id="img3"
+                    height="250"
+                    src="../assets/images/umberto-FewHpO4VC9Y-unsplash.jpg"
+                  ></v-img>
+                </div>
 
-              <h3>Responsive Design</h3>
+                <h3>Responsive Design</h3>
 
-              <div class="pad">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum alias accusamus distinctio eos! Unde rerum quibusdam
-                illum adipisci quasi repudiandae delectus, repellendus incidunt
-                dolores dolorum assumenda doloremque, magnam itaque magni. Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-                dolore natus doloribus?
-              </div>
-            </v-card>
+                <div class="pad">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum alias accusamus distinctio eos! Unde rerum quibusdam
+                  illum adipisci quasi repudiandae delectus, repellendus
+                  incidunt dolores dolorum assumenda doloremque, magnam itaque
+                  magni. Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Cupiditate dolore natus doloribus?
+                </div>
+              </v-card>
+            </v-lazy>
           </v-col>
           <v-col class="hidden-lg-and-up hidden-sm-and-down"></v-col>
         </v-row>
@@ -93,6 +110,26 @@ export default {
 };
 </script>
 <style scoped>
+.test {
+  height: 250px;
+  width: 150%;
+  margin-left: -25%;
+  overflow: hidden;
+}
+#img1,
+#img2,
+#img3 {
+  width: 75%;
+  margin-left: 12.5%;
+  transition-duration: 1s;
+  transition-property: all;
+}
+#img1:hover,
+#img2:hover,
+#img3:hover {
+  width: 100%;
+  margin-left: 0;
+}
 #footer {
   height: 100%;
   position: absolute;
@@ -103,7 +140,7 @@ export default {
   background-color: transparent !important;
 }
 .Services {
-  background-image: url("../assets/images/firmbee-com-GANqCr1BRTU-unsplash.jpg");
+  background-image: url("../assets/images/rsz_firmbee-com-ganqcr1brtu-unsplash.jpg");
   background-size: cover;
   height: 100%;
 }
@@ -144,6 +181,8 @@ h3 {
 #card1,
 #card2,
 #card3 {
+  text-align: center;
+  overflow: hidden;
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.692);
   background-color: rgb(240, 240, 240);
 }

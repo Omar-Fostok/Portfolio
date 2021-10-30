@@ -1,22 +1,5 @@
 <template>
   <div id="Contact">
-    <div class="social">
-      <a href="https://ms-my.facebook.com/omar.fustok/photos" target="_blank">
-        <v-img
-          src="@/assets/images/facebook-logo-png-2320.png"
-          id="face"
-        ></v-img>
-      </a>
-      <a href=" mailto: omar6817167@gmail.com" target="_blank">
-        <v-img src="@/assets/images/gmail-icon-38472.png" id="google"></v-img>
-      </a>
-      <a href="tel: +963945281526">
-        <v-img
-          src="@/assets/images/whatsapp-logo-png-2261.png"
-          id="whats"
-        ></v-img>
-      </a>
-    </div>
     <Navigation id="nav" />
     <v-main id="content">
       <v-row justify="center">
@@ -58,7 +41,7 @@
             </v-card-text>
             <v-divider class="mt-12"></v-divider>
             <v-card-actions>
-              <v-btn text> Cancel </v-btn>
+              <v-btn text style="font-weight: bold"> Cancel </v-btn>
               <v-spacer></v-spacer>
               <v-slide-x-reverse-transition>
                 <v-tooltip v-if="formHasErrors" left>
@@ -79,6 +62,31 @@
               <v-btn id="batt" text @click="submit"> Send Message </v-btn>
             </v-card-actions>
           </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <div class="social">
+            <a
+              href="https://ms-my.facebook.com/omar.fustok/photos"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square fa-lg" id="f"></i>
+            </a>
+            <a href=" mailto: omar6817167@gmail.com" target="_blank">
+              <i class="fab fa-google fa-lg" id="g"></i>
+            </a>
+            <a href="https://wa.me/963945281526" target="_blank">
+              <i class="fab fa-whatsapp fa-lg" id="w"></i>
+            </a>
+
+            <a
+              href=" https://www.linkedin.com/in/omar-fostok-b9060a206/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-lg" id="l"></i>
+            </a>
+          </div>
         </v-col>
       </v-row>
     </v-main>
@@ -365,38 +373,32 @@ export default {
 };
 </script>
 <style scoped>
-#batt {
-  color: #045db5;
-}
 .social {
-  position: absolute;
-  bottom: 50px;
-  left: 1vw;
-  z-index: 100;
+  text-align: center;
 }
-#face,
-#google,
-#whats {
-  float: left;
+#f:hover,
+#g:hover,
+#w:hover,
+#l:hover {
+  color: #0169d1;
 }
-#whats {
-  /* margin-top: 0.3vw;
-  margin-left: 0.6vw; */
-  width: 27px;
-  margin-top: 3px;
-  margin-left: 6px;
-}
-
-#face {
-  /* margin-top: 0.5vw; */
-  width: 40px;
-  margin-top: 5px;
-}
-#google {
-  width: 32px;
-  margin-top: 1px;
+#f,
+#g,
+#w,
+#l {
+  margin: 20px;
+  color: rgb(240, 240, 240);
+  transition-property: color;
+  transition-duration: 0.25s;
 }
 
+#batt {
+  color: #0361c0;
+  font-weight: bold;
+}
+#content {
+  background-color: rgba(255, 255, 255, 0.05);
+}
 #Contact {
   background-image: url("../assets/images/550656.jpg");
   background-size: cover;
@@ -413,11 +415,19 @@ export default {
 #cardy {
   background-color: rgb(240, 240, 240);
   margin-top: 145px;
-  margin-bottom: 149px;
+  margin-bottom: 152px;
 }
 #nav {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+@media only screen and (min-width: 960px) {
+  #f,
+  #g,
+  #w,
+  #l {
+    font-size: 30px;
+  }
 }
 </style>

@@ -5,7 +5,7 @@
     <Navigation id="nav" />
     <v-main>
       <v-img
-        src="@/assets/images/altumcode-dMUt0X3f59Q-unsplash.jpg"
+        src="@/assets/images/rsz_altumcode-dmut0x3f59q-unsplash.jpg"
         max-width="100%"
         max-height="100%"
         id="image"
@@ -69,7 +69,6 @@ export default {
 }
 
 .test1 {
-  font-family: "Anton", sans-serif;
   text-shadow: 10px 10px 15px black;
   color: white;
   font-size: 5vw;
@@ -132,7 +131,7 @@ export default {
   padding: 0px 25px;
 }
 .line {
-  width: 40vw;
+  width: 33vw;
   height: 0.25vw;
   border-radius: 50px;
   position: fixed;
@@ -151,10 +150,10 @@ export default {
     left: -1600px;
   }
   48% {
-    left: 4vw;
+    left: 5vw;
   }
   82% {
-    left: 4vw;
+    left: 5vw;
   }
   95% {
     left: -1600px;
@@ -220,7 +219,7 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 520px) {
   .test1 {
     font-size: 8vw;
     top: 37vw;
@@ -238,15 +237,15 @@ export default {
       left: -1600px;
     }
     55% {
-      left: 8vw;
+      left: 9vw;
     }
     82% {
-      left: 8vw;
+      left: 9vw;
     }
   }
 
   .line {
-    width: 62vw;
+    width: 50vw;
     height: 0.3vw;
     border-radius: 20px;
     top: 63vw;

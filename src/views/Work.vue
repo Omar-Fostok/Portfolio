@@ -50,15 +50,15 @@ export default {
     return {
       items: [
         {
-          src: require("../assets/images/rana-sawalha-W_-6PWGbYaU-unsplash.jpg"),
+          src: require("../assets/images/rsz_rana-sawalha-w_-6pwgbyau-unsplash.jpg"),
           title: "WORKING",
         },
         {
-          src: require("../assets/images/Retro_Closeup_Camera_442946_1920x1080.jpg"),
+          src: require("../assets/images/rsz_retro_closeup_camera_442946_1920x1080.jpg"),
           title: "PROFESSIONALITY",
         },
         {
-          src: require("../assets/images/wp8231973-creative-4k-wallpapers.jpg"),
+          src: require("../assets/images/249675756_900854940549218_4005676627775797835_n.jpg"),
           title: "CREAT",
         },
       ],
