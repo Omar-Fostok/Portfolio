@@ -7,7 +7,7 @@
           style="
             background-color: rgb(240, 240, 240);
             border: 2px solid #1976d2;
-            border-radius: 5px;
+            border-radius: 8px;
           "
         >
           <v-col cols="12" sm="12" md="12" lg="8">
@@ -203,7 +203,7 @@ export default {
   z-index: 10;
 }
 #about {
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0px 0px 20px black;
   margin-top: 130px;
   margin-bottom: 153.5px;

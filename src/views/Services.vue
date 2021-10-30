@@ -13,7 +13,7 @@
                 <div class="test">
                   <v-img
                     height="250"
-                    src="../assets/images/rsz_diego-ph-fiq0tet6llw-unsplash.jpg"
+                    src="../assets/images/photo_2021-10-30_18-41-43.jpg"
                     id="img1"
                   ></v-img>
                 </div>
@@ -64,7 +64,7 @@
                   <v-img
                     id="img3"
                     height="250"
-                    src="../assets/images/umberto-FewHpO4VC9Y-unsplash.jpg"
+                    src="../assets/images/rsz_umberto-fewhpo4vc9y-unsplash (1).jpg"
                   ></v-img>
                 </div>
 

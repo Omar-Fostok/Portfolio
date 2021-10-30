@@ -380,7 +380,7 @@ export default {
 #g:hover,
 #w:hover,
 #l:hover {
-  color: #0169d1;
+  color: #1976d2;
 }
 #f,
 #g,
@@ -393,7 +393,7 @@ export default {
 }
 
 #batt {
-  color: #0361c0;
+  color: #1976d2;
   font-weight: bold;
 }
 #content {

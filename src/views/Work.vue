@@ -58,7 +58,7 @@ export default {
           title: "PROFESSIONALITY",
         },
         {
-          src: require("../assets/images/249675756_900854940549218_4005676627775797835_n.jpg"),
+          src: require("../assets/images/rsz_249675756_900854940549218_4005676627775797835_n.jpg"),
           title: "CREAT",
         },
       ],
